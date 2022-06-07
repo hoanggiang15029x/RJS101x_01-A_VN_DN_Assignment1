@@ -1,9 +1,9 @@
 import React from "react";
 import "../index.css";
 
-export default function Staff({ staff, showInfor }) {
+export default function Staff({ staff, chooseStaff }) {
   return (
-    <button className="staff" onClick={() => showInfor(staff.name)}>
+    <button className="staff" onClick={() => chooseStaff(staff)}>
       {staff.name}
     </button>
   );
