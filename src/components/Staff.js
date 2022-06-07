@@ -5,10 +5,10 @@ const showInfor = (id) => {
   alert("hello", id);
 };
 
-export default function Staff() {
+export default function Staff({ staff }) {
   return (
-    <button class="staff" onClick={showInfor}>
-      Nguyễn Văn A
+    <button className="staff" onClick={showInfor}>
+      {staff.name}
     </button>
   );
 }
