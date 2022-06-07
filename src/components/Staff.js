@@ -1,13 +1,9 @@
 import React from "react";
 import "../index.css";
 
-const showInfor = () => {
-  alert("hello");
-};
-
-export default function Staff({ staff }) {
+export default function Staff({ staff, showInfor }) {
   return (
-    <button className="staff" onClick={showInfor}>
+    <button className="staff" onClick={() => showInfor(staff.name)}>
       {staff.name}
     </button>
   );

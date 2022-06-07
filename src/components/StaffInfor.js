@@ -2,5 +2,12 @@ import React from "react";
 import "../index.css";
 
 export default function StaffInfor({ staff }) {
-  return <button className="staff">Hello</button>;
+  return (
+    <>
+      <br></br>
+      <label className="information">
+        Bấm vào tên nhân viên để xem thông tin
+      </label>
+    </>
+  );
 }
